@@ -9,6 +9,7 @@ int main() {
 
 	int CoorX_1, CoorX_2, CoorY_1, CoorY_2, Figure;
 	int count_Queen_da = 0, count_King_da = 0, count_Rook_da = 0, count_Bishop_da = 0, count_Knight_da = 0;
+	int flag = 0;
 
 	printf("Введите координаты первой клетки(X, Y):\n");
 	scanf_s("%d %d", &CoorX_1, &CoorY_1);
@@ -40,20 +41,7 @@ int main() {
 			printf("Ферзь может попасть на первую клетку\n");
 		}
 		else {
-			printf("Ферзь не может попасть на первую клетку\n");
-			printf("Могут:\n");
-			if (count_King_da > 0) {
-				printf("Король\n");
-			}
-			if (count_Rook_da > 0) {
-				printf("Ладья\n");
-			}
-			if (count_Bishop_da > 0) {
-				printf("Слон\n");
-			}
-			if (count_Knight_da > 0) {
-				printf("Конь\n");
-			}
+			flag = 1;
 		}	
 	}
 	if (Figure == 2) {
@@ -61,20 +49,7 @@ int main() {
 			printf("Король может попасть на первую клетку\n");
 		}
 		else {
-			printf("Король не может попасть на первую клетку\n");
-			printf("Могут:\n");
-			if (count_Queen_da > 0) {
-				printf("Ферзь\n");
-			}
-			if (count_Rook_da > 0) {
-				printf("Ладья\n");
-			}
-			if (count_Bishop_da > 0) {
-				printf("Слон\n");
-			}
-			if (count_Knight_da > 0) {
-				printf("Конь\n");
-			}
+			flag = 1;
 		}
 	}
 	if (Figure == 3) {
@@ -82,20 +57,7 @@ int main() {
 			printf("Ладья может попасть на первую клетку\n");
 		}
 		else {
-			printf("Ладья не может попасть на первую клетку\n");
-			printf("Могут:\n");
-			if (count_King_da > 0) {
-				printf("Король\n");
-			}
-			if (count_Queen_da > 0) {
-				printf("Ферзь\n");
-			}
-			if (count_Bishop_da > 0) {
-				printf("Слон\n");
-			}
-			if (count_Knight_da > 0) {
-				printf("Конь\n");
-			}
+			flag = 1;
 		}
 	}
 	if (Figure == 4) {
@@ -103,20 +65,7 @@ int main() {
 			printf("Слон может попасть на первую клетку\n");
 		}
 		else {
-			printf("Слон не может попасть на первую клетку\n");
-			printf("Могут:\n");
-			if (count_King_da > 0) {
-				printf("Король\n");
-			}
-			if (count_Rook_da > 0) {
-				printf("Ладья\n");
-			}
-			if (count_Queen_da > 0) {
-				printf("Ферзь\n");
-			}
-			if (count_Knight_da > 0) {
-				printf("Конь\n");
-			}
+			flag = 1;
 		}
 	}
 	if (Figure == 5) {
@@ -124,20 +73,26 @@ int main() {
 			printf("Конь может попасть на первую клетку\n");
 		}
 		else {
-			printf("Конь не может попасть на первую клетку\n");
-			printf("Могут:\n");
-			if (count_King_da > 0) {
-				printf("Король\n");
-			}
-			if (count_Rook_da > 0) {
-				printf("Ладья\n");
-			}
-			if (count_Queen_da > 0) {
-				printf("Ферзь\n");
-			}
-			if (count_Bishop_da > 0) {
-				printf("Слон\n");
-			}
+			flag = 1;
+		}
+	}
+	if (flag == 1) {
+		printf("Ваша фигура не может попасть на первую клетку\n");
+		printf("Могут:\n");
+		if (count_King_da > 0) {
+			printf("Король\n");
+		}
+		if (count_Rook_da > 0) {
+			printf("Ладья\n");
+		}
+		if (count_Queen_da > 0) {
+			printf("Ферзь\n");
+		}
+		if (count_Bishop_da > 0) {
+			printf("Слон\n");
+		}
+		if (count_Knight_da > 0) {
+			printf("Конь\n");
 		}
 	}
 	return 0;

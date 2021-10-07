@@ -17,12 +17,11 @@ int main() {
         if (ch == ' ' || ch == '\t')
             flag = -1;
         else if (flag == -1) {
-            if (ch == '0' || ch == '1' || ch == '2' || ch == '3' || ch == '4' || ch == '5' || ch == '6' || ch == '7' || ch == '8' || ch == '9'){
+            if (48 <= ch && ch <= 57){
                 flag = 1;
                 numbers++;
             }
-            else
-            {
+            if ((-128 <= ch && ch <= -17) || ((65 <= ch && ch <= 90) || (97 <= ch && ch <= 122))) {
                 flag = 1;
                 words++;
             }
