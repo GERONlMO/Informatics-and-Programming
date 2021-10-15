@@ -1,27 +1,55 @@
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
 #include <locale.h>
+#include <math.h>
+#include <malloc.h>
 
 int main() {
+
 	char* locale = setlocale(LC_ALL, "");
 
-	int n, a, k, i, *Massive;
-	printf("");
+	int n, a1, a2, k;
+	int* massive;
+
+	printf("Введите размер массива: \n");
 	scanf_s("%d", &n);
-	printf("");
-	scanf_s("%d", &a);
+	printf("Введите диапазон: \n");
+	scanf_s("%d", &a1);
 
 	srand(time(0));
-	Massive = malloc(n * sizeof(int));
-	printf("");
+	massive = malloc(n * sizeof(int));;
+	printf("Начальный массив: \n");
 
-	for (i = 0; i < n; i++)
-	{
-		Massive[n] = -a + rand() % a;
+	for (int i = 0; i < n; i++) {
+		massive[i] = rand() % (2 * a1 - 1) - a1;
+		printf(" %d ", massive[i]);
 	}
 
-	for (i = 0; i < k; i++) {
-		int sdvig = Massive[n - 1];
+	printf("\nВведите размер сдивига в права: \n");
+	scanf_s("%d", &k);
+
+	for (int i = 0; i < k; i++) {
+		int sdvig = massive[n - 1];
+		for (int h = n - 1; h > -1; h--) {
+			massive[h] = massive[h - 1];
+		}
+		massive[0] = sdvig;
 	}
+
+	printf("Сдвинутый массив: \n");
+	for (int i = 0; i < n; i++) {
+		printf(" %d ", massive[i]);
+	}
+
+	for (int i = 0; i < n / 2; i++) {
+		int per = massive[i];
+		massive[i] = massive[n - i - 1];
+		massive[n - i - 1] = per;
+	}
+
+	printf("\nКонечный результат: \n");
+	for (int i = 0; i < n; i++) {
+		printf(" %d ", massive[i]);
+	}
+
+	return 0;
 }

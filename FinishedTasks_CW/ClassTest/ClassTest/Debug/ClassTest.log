@@ -1,4 +1,0 @@
-﻿  main.c
-C:\Users\mrhin\Desktop\Лобач\Инфа ЛАБЫ\Informatics-and-Programming\FinishedTasks_CW\ClassTest\ClassTest\main.c(17,12): warning C4013: time: нет определения; предполагается "extern" с возвратом типа "int"
-C:\Users\mrhin\Desktop\Лобач\Инфа ЛАБЫ\Informatics-and-Programming\FinishedTasks_CW\ClassTest\ClassTest\main.c(23,12): warning C4477: "scanf_s": в строке форматирования "%d" требуется аргумент типа "int *", но вариативный аргумент "1" имеет тип "int"
-  ClassTest.vcxproj -> C:\Users\mrhin\Desktop\Лобач\Инфа ЛАБЫ\Informatics-and-Programming\FinishedTasks_CW\ClassTest\Debug\ClassTest.exe
