@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fd08fd20-ff48-4385-b9fb-49cb754abda1}</ProjectGuid>
-    <RootNamespace>MatrixOperation</RootNamespace>
+    <ProjectGuid>{696042dc-1efb-4a1b-a056-bf3747fa7eb5}</ProjectGuid>
+    <RootNamespace>Witcher</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

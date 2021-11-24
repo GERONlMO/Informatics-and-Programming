@@ -1,5 +1,0 @@
-﻿  main.c
-C:\Users\mrhin\Desktop\Лобач\Инфа ЛАБЫ\Informatics-and-Programming\FinishedTasks_CW\MatrixOperation\MatrixOperation\main.c(31,1): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-C:\Users\mrhin\Desktop\Лобач\Инфа ЛАБЫ\Informatics-and-Programming\FinishedTasks_CW\MatrixOperation\MatrixOperation\main.c(87,44): warning C4047: =: "int" отличается по уровням косвенного обращения от "int (__cdecl *)(int,int)"
-C:\Users\mrhin\Desktop\Лобач\Инфа ЛАБЫ\Informatics-and-Programming\FinishedTasks_CW\MatrixOperation\MatrixOperation\main.c(128,42): warning C4047: =: "int" отличается по уровням косвенного обращения от "int (__cdecl *)(int,int)"
-  MatrixOperation.vcxproj -> C:\Users\mrhin\Desktop\Лобач\Инфа ЛАБЫ\Informatics-and-Programming\FinishedTasks_CW\MatrixOperation\Debug\MatrixOperation.exe

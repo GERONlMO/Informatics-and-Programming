@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fd08fd20-ff48-4385-b9fb-49cb754abda1}</ProjectGuid>
-    <RootNamespace>MatrixOperation</RootNamespace>
+    <ProjectGuid>{0378b407-33e9-4fc7-ba14-c99e96414add}</ProjectGuid>
+    <RootNamespace>Task2HW</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
