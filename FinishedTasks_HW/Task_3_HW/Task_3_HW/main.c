@@ -55,7 +55,7 @@ int main()
             for (int t2 = 0; t2 < n; t2++) {
                 if (userNumber_massive[t1] == computerNumber_massive[t2] && t1 == t2) {
                     bull++;
-                    if (userNumber_massive[t1] == computerNumber_massive[t1] && bull == n) {
+                    if (bull == n) {
                         printf("У вас все быки, вы ВЫЙГРАЛИ!!!\n");
                         return exit;
                     }
@@ -68,7 +68,6 @@ int main()
         printf("Количество коров: %d\nКолличество быков: %d\n", cow, bull);
     }
 
-    putchar('\n');
     free(userNumber_massive);
     free(computerNumber_massive);
     return 0;
